@@ -1,7 +1,9 @@
 let myLibrary = [];
+let arrayId = 0;
 
 function addBookToLibrary(){
   
+
 }
 // the constructor
 function Book(name, author, pages, situation) {
