@@ -1,6 +1,70 @@
-/*#container {
+body{
   display: grid;
-  grid-template-columns: repeat(5);
-  grid-gap: 10px;
-  
-}*/
+  justify-content: center;
+  margin: 0;
+  background-color: rgb(207, 187, 226);
+}
+
+#form-block{
+  display: none;
+  background-color: rgb(144, 207, 144);
+  color: gray;
+  padding: 2vw;
+  border-radius: 1vw;
+  box-shadow: 1px 1px 10px;
+  width: clamp(10vw, 20vw, 30vw);
+}
+
+#button-container{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#newBook{
+  width: 6vw;
+  height: 6vw;
+  border-radius: 3vw;
+  border-width: 0px;
+  background-color: lightgreen;
+  box-shadow: 1px 1px 5px;
+  margin: 2vw;
+}
+
+input,
+select,
+button{
+  border-width: 0px;
+  color:gray,
+}
+
+button{
+  background-color: rgb(236, 98, 98);
+  color: white;
+  padding: 0;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+}
+
+p{
+  font-family: roboto;
+  color:gray;
+  display: inline;
+  line-height: 5vw;
+}
+
+select{
+  display: block;
+  color: gray;
+}
+
+#submit{
+  background-color: blueviolet;
+  color: white;
+  width: 4vw;
+  height: 2vw;
+  border-radius: 0.5vw;
+  box-shadow: 1px 1px 10px;
+}

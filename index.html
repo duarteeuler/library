@@ -6,11 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book List</title>
   <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form action="">
 
-    <div>
+  <div id="button-container">
+    <button id="newBook" onclick="showForm()">New book</button>
+  </div>
+  
+  <form id="form-block" action="">
+    <div class="form-block">
       <label for="title">Book Title:</label>
       <input id="title" type="text" name="book-title">  
     </div>
@@ -21,22 +29,14 @@
     </div>
 
     <div>
-      <fieldset>
         <label for="status">status</label>
         <select id="status" name="status" value="status">
         <option value="read">read</option>
-        <option value="notRead">not read</option>
-      </fieldset>
+        <option value="notRead">not read</option> 
     </div>
     
-    <input type="button" value="Submit" onclick="addBookToLibrary()">
-
+    <input id="submit" type="button" value="Submit" onclick="addBookToLibrary()">
   </form>
-
-  <div id="container">
-    
-  </div>
-
-
+  <div id="container"></div>
 </body>
 </html>
